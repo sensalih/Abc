@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Abc.Northwind.MvcWebUI.Controllers
 {
-    [Authorize]//sisteme giriş yapması gerekiyor
+    [Authorize(Roles = "Admin")]//sisteme giriş yapması gerekiyor
     public class AdminController : Controller
     {
         private IProductService _productService;
